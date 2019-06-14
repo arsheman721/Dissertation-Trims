@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BarbersDetailActivity"
+    android:padding="12dp"
+    android:background="@drawable/mainbg"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout">
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/user"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"
+            android:layout_centerHorizontal="true"
+
+            android:id="@+id/iv_barb_detail"
+            />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvbarberdetail_name"
+
+            android:layout_below="@+id/iv_barb_detail"
+            android:hint="Name"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvbarberdetail_email"
+
+            android:layout_below="@+id/tvbarberdetail_name"
+            android:hint="Email"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+            android:text="Make An Appointment"
+
+            android:textSize="24dp"
+            android:layout_margin="10dp"/>
+
+        <CheckBox
+            android:id="@+id/item_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Beard Trim                                                        $20"/>
+
+        <CheckBox
+            android:id="@+id/item_2"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hair Cut and Wash                                           $50"/>
+
+        <CheckBox
+            android:id="@+id/item_3"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Haircut (any Fade)                                            $60"/>
+
+        <CheckBox
+            android:id="@+id/item_4"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Long Hair                                                            $80"/>
+
+        <CheckBox
+            android:id="@+id/item_5"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Shave Up                                                            $30"/>
+
+        <CheckBox
+            android:id="@+id/item_6"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Shave                                                                  $25"/>
+
+        <CheckBox
+            android:id="@+id/item_7"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hair Color                                                            $40"/>
+
+        <CheckBox
+            android:id="@+id/item_8"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Face Massage                                                    $50"/>
+
+        <ru.dimorinny.floatingtextbutton.FloatingTextButton
+            android:id="@+id/appointment_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:floating_background_color="@color/colorAccent"
+            app:floating_left_icon="@drawable/ic_menu_send"
+            app:floating_title="Book Appointment"
+            app:floating_title_color="@android:color/white"
+
+            android:padding="20dp"
+            />
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
+

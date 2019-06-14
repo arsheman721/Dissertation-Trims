@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/mainbg"
+
+
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_centerInParent="true"
+    android:layout_centerVertical="true">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+
+        <ImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/finallogo"
+
+            android:layout_gravity="center"
+
+            android:id="@+id/iv_barb_detail"
+            android:layout_margin="20dp"
+            />
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Your Email Address"
+                android:drawablePadding="5dp"
+                android:inputType="textEmailAddress"
+                android:text="testing@gmail.com" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            app:errorEnabled="true">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_Pasword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Pasword"
+                android:inputType="textPassword"
+                android:drawableLeft="@android:drawable/ic_lock_lock"
+                android:text="testing" />
+        </android.support.design.widget.TextInputLayout>
+        <RadioGroup
+            android:id="@+id/rg_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radio_customer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="I am Customer"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/radio_barber"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="I am Barber"/>
+
+        </RadioGroup>
+
+
+
+        <ru.dimorinny.floatingtextbutton.FloatingTextButton
+            android:padding="12dp"
+            android:layout_margin="10dp"
+
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:floating_background_color="@color/colorAccent"
+            app:floating_left_icon="@drawable/ic_menu_send"
+            app:floating_title="Login Now"
+            app:floating_title_color="@android:color/white"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/forgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Forgot Password..?? Reset  "
+            android:layout_gravity="center"
+
+            android:textColor="@color/colorPrimaryDark"
+            />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/dumi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New User...?  "
+
+            />
+        <TextView
+            android:id="@+id/tv_Signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Signup Now"
+            android:textColor="@color/colorAccent"
+
+            android:layout_toRightOf="@+id/dumi"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

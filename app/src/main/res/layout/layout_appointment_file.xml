@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="40dp"
+
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/mainbg"
+    android:padding="20dp"
+    android:layout_marginTop="5dp">
+
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/iv_barber"
+            android:layout_width="77dp"
+            android:layout_height="77dp"
+            android:src="@drawable/user"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp"
+            app:civ_shadow="true"
+            app:civ_shadow_radius="1" />
+
+
+        <TextView
+            android:id="@+id/tv_customername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Name : Abdul Samad"
+            android:gravity="left"
+            android:padding="0dp"
+            android:layout_toRightOf="@+id/iv_barber"
+            android:layout_marginTop="0dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Date : 25-03-2019"
+            android:gravity="left"
+            android:padding="0dp"
+            android:layout_toRightOf="@+id/iv_barber"
+            android:layout_below="@+id/tv_customername"
+            android:textStyle="bold"
+            >
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/tv_date"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="-1dp"
+            android:layout_toEndOf="@+id/iv_barber"
+            android:gravity="left"
+            android:hint="Status : Pending"
+            android:textStyle="bold">
+        </TextView>
+        <TextView
+            android:id="@+id/tv_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_status"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="-1dp"
+            android:layout_toEndOf="@+id/iv_barber"
+            android:gravity="center"
+            android:visibility="gone"
+            android:hint="Note : Appointment is Pending due to Barber"
+            android:padding="0dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/approve"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="24dp"
+            android:src="@drawable/ic_approve" />
+
+        <ImageView
+            android:id="@+id/reject"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="7dp"
+            android:layout_toStartOf="@+id/approve"
+            android:src="@mipmap/ic_cross" />
+
+        <ImageView
+            android:id="@+id/pending"
+            android:layout_width="30dp"
+            android:layout_height="26dp"
+            android:layout_alignTop="@+id/tv_status"
+            android:layout_marginStart="-3dp"
+            android:layout_marginTop="-2dp"
+            android:layout_toEndOf="@+id/tv_status"
+            android:foregroundGravity="left"
+            android:src="@mipmap/pending" />
+
+
+</RelativeLayout>
+
+</android.support.v7.widget.CardView>

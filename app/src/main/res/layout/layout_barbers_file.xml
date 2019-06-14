@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp"
+    android:layout_marginTop="5dp"
+    card_view:cardCornerRadius="40dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+
+                    android:id="@+id/iv_barber"
+                    android:layout_width="77dp"
+                    android:layout_height="77dp"
+                    android:src="@drawable/user"
+                    app:civ_border_color="#FF000000"
+                    app:civ_border_width="2dp"
+
+                    ></de.hdodenhof.circleimageview.CircleImageView>
+
+
+                <TextView
+                    android:id="@+id/tv_barber_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/iv_barber"
+                    android:gravity="left"
+                    android:hint="Abdul Samad"
+                    android:padding="5dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_barber_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_barber_name"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_toRightOf="@+id/iv_barber"
+                    android:gravity="left"
+                    android:hint="asmadni45@gmail.com"
+                    android:padding="5dp"
+                    android:textStyle="bold">
+
+                </TextView>
+        </RelativeLayout>
+
+
+
+
+
+</android.support.v7.widget.CardView>
